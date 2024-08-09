@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gray-100 {
+  background-color: #F6F6F6;
+}
+.table-heading{
+  color: #5F5F61;
+}
+.card-heading{
+  color:#313336
+}

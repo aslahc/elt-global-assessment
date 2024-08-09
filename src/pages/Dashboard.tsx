@@ -1,4 +1,4 @@
-import UpcomingClasses from "../components/UpcomingClasses";
+import UpcomingClasses from "../components/dashboard/UpcomingClasses";
 import React from "react";
 
 const Dashboard = () => {

@@ -5,7 +5,6 @@ export const classData: ClassData[] = [
   {
     id: uuidv4(),
     name: "Design Hierarchy",
-    time: "10:00 AM",
     date: new Date("2024-08-10T10:00:00"),
     staff: "Suriya R",
     staffDetails: "Expert in UI/UX Design",
@@ -17,7 +16,6 @@ export const classData: ClassData[] = [
   {
     id: uuidv4(),
     name: "React Fundamentals",
-    time: "12:00 PM",
     date: new Date("2024-08-10T12:00:00"),
     staff: "Nandini S",
     staffDetails: "Senior Frontend Developer",
@@ -29,7 +27,6 @@ export const classData: ClassData[] = [
   {
     id: uuidv4(),
     name: "Advanced JavaScript",
-    time: "02:00 PM",
     date: new Date("2024-08-13T14:00:00"),
     staff: "Karthik M",
     staffDetails: "JS Specialist",
@@ -41,7 +38,6 @@ export const classData: ClassData[] = [
   {
     id: uuidv4(),
     name: "Node.js Basics",
-    time: "04:00 PM",
     date: new Date("2024-08-10T16:00:00"),
     staff: "Ayesha A",
     staffDetails: "Backend Developer",
@@ -53,7 +49,6 @@ export const classData: ClassData[] = [
   {
     id: uuidv4(),
     name: "Database Management",
-    time: "10:00 AM",
     date: new Date("2024-08-14T10:00:00"),
     staff: "Vikram S",
     staffDetails: "Database Architect",
@@ -65,7 +60,6 @@ export const classData: ClassData[] = [
   {
     id: uuidv4(),
     name: "Version Control with Git",
-    time: "12:00 PM",
     date: new Date("2024-08-11T12:00:00"),
     staff: "Priya N",
     staffDetails: "DevOps Engineer",
@@ -77,7 +71,6 @@ export const classData: ClassData[] = [
   {
     id: uuidv4(),
     name: "Design Patterns",
-    time: "02:00 PM",
     date: new Date("2024-08-11T14:00:00"),
     staff: "Raghav K",
     staffDetails: "Software Architect",
@@ -89,7 +82,6 @@ export const classData: ClassData[] = [
   {
     id: uuidv4(),
     name: "TypeScript Essentials",
-    time: "04:00 PM",
     date: new Date("2024-08-11T16:00:00"),
     staff: "Divya P",
     staffDetails: "Full Stack Developer",
@@ -101,7 +93,6 @@ export const classData: ClassData[] = [
   {
     id: uuidv4(),
     name: "Cloud Computing Basics",
-    time: "10:00 AM",
     date: new Date("2024-08-16T10:00:00"),
     staff: "Arjun B",
     staffDetails: "Cloud Engineer",
@@ -113,7 +104,6 @@ export const classData: ClassData[] = [
   {
     id: uuidv4(),
     name: "API Development",
-    time: "12:00 PM",
     date: new Date("2024-08-12T12:00:00"),
     staff: "Shreya M",
     staffDetails: "API Developer",

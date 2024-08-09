@@ -1,51 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useCountdown from "../../hooks/useCountdown";
+import { ClassData } from "../../types/classDataTypes";
+import { useSelector } from "react-redux";
+import { RootState } from "../../redux/store"; // Adjust the path according to your store setup
 
 interface CountdownTimeProps {
   targetDate: Date;
+  classId: string;
 }
 
-const CountdownTIme: React.FC<CountdownTimeProps> = ({ targetDate }) => {
-  const [timeRemaining, setTimeRemaining] = useState<string>("");
-  const [isDays, setIsDays] = useState<boolean>(false);
+const CountdownTime: React.FC<CountdownTimeProps> = ({
+  targetDate,
+  classId,
+}) => {
+  const classData = useSelector((state: RootState) =>
+    state.classes.classes.find((classItem) => classItem.id === classId)
+  );
 
-  useEffect(() => {
-    const updateCountdown = () => {
-      const now = new Date().getTime();
-      const target = new Date(targetDate).getTime();
-      const distance = target - now;
+  // Handle the case where classData might be undefined
+  if (!classData) {
+    return <div>Class data not found</div>;
+  }
 
-      if (distance <= 0) {
-        setTimeRemaining("00:00:00");
-        setIsDays(false);
-        return;
-      }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      if (days > 0) {
-        setTimeRemaining(`${days} days`);
-        setIsDays(true);
-      } else {
-        setTimeRemaining(
-          `${String(hours).padStart(2, "0")}:${String(minutes).padStart(
-            2,
-            "0"
-          )}:${String(seconds).padStart(2, "0")}`
-        );
-        setIsDays(false);
-      }
-    };
-
-    const timer = setInterval(updateCountdown, 1000);
-    updateCountdown(); // Call it once immediately
-
-    return () => clearInterval(timer);
-  }, [targetDate]);
+  const { timeRemaining, isDays } = useCountdown(targetDate, classData);
 
   return (
     <div
@@ -74,4 +51,4 @@ const CountdownTIme: React.FC<CountdownTimeProps> = ({ targetDate }) => {
   );
 };
 
-export default CountdownTIme;
+export default CountdownTime;

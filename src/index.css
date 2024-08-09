@@ -8,6 +8,15 @@
 .table-heading{
   color: #5F5F61;
 }
+.table-cell-bg{
+  background-color: #FCFCFC;
+}
 .card-heading{
   color:#313336
+}
+.font-74 {
+  font-weight: 490;
+}
+.date-text{
+  color: #737475;
 }

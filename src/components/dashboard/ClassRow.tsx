@@ -1,19 +1,23 @@
 import React from "react";
 import { TableRow, TableCell } from "../../shadcncomponents/ui/table";
+// Importing utility function to format date and time
 import { formatDateTime } from "../../utils/dateutils";
+// Importing various button components used in the table
 import BookNowBtn from "../Buttons/BookNowBtn";
 import CountdownTime from "../Buttons/CountdownTIme";
 import LiveJoinBtn from "../Buttons/LiveJoinBtn";
 import LiveTimer from "../Buttons/LiveTimer";
+// Importing TypeScript type for class data
 import { ClassData } from "../../types/classDataTypes";
 
 interface ClassRowProps {
   classItem: ClassData;
-  index: number; // Add this line
+  index: number;
 }
-
+//  This component renders a single row in the class table,
 const ClassRow: React.FC<ClassRowProps> = ({ classItem, index }) => (
-  <TableRow className="bg-gray-100 dark:bg-gray-700">
+  <TableRow className="bg-gray-100 dark:bg-gray-700  sm:flex-row">
+    {/* first table cell */}
     <TableCell>
       <div className="grid grid-cols-[auto_1fr] gap-3">
         <span
@@ -41,12 +45,13 @@ const ClassRow: React.FC<ClassRowProps> = ({ classItem, index }) => (
         </div>
       </div>
     </TableCell>
+    {/* second table cell  */}
     <TableCell>
       <div className="flex items-center space-x-2 pr-14">
         <img
           src={classItem.imgSrc}
           alt={classItem.staff}
-          className="h-9 w-9 rounded-full"
+          className="h-10 w-10 rounded-full object-cover"
         />
         <div className="grid">
           <div className="font-semibold dark:text-white">{classItem.staff}</div>
@@ -56,6 +61,7 @@ const ClassRow: React.FC<ClassRowProps> = ({ classItem, index }) => (
         </div>
       </div>
     </TableCell>
+    {/* third table cell for button  */}
     <TableCell>
       {classItem.Live ? (
         <LiveJoinBtn />

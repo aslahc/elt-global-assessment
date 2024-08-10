@@ -2,7 +2,7 @@ import React from "react";
 import useCountdown from "../../hooks/useCountdown";
 import { ClassData } from "../../types/classDataTypes";
 import { useSelector } from "react-redux";
-import { RootState } from "../../redux/store"; // Adjust the path according to your store setup
+import { RootState } from "../../redux/store";
 
 import { CountdownTimeProps } from "../../types/CountdownTime";
 
@@ -18,7 +18,7 @@ const CountdownTime: React.FC<CountdownTimeProps> = ({
   if (!classData) {
     return <div>Class data not found</div>;
   }
-
+  // hooks to manage the countdown timer from current time to live
   const { timeRemaining, isDays } = useCountdown(targetDate, classData);
 
   return (

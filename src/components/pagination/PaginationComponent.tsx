@@ -1,4 +1,5 @@
 import React from "react";
+// Importing the Pagination-related components
 import {
   Pagination,
   PaginationContent,
@@ -9,17 +10,20 @@ import {
   PaginationEllipsis,
 } from "../../shadcncomponents/ui/pagination";
 import { usePagination } from "../../hooks/usePagination";
-
+// Importing the types for the pagination component's props
 import { PaginationProps } from "../../types/pagination";
 
+// Defining the PaginationComponent as a functional React component
 const PaginationComponent: React.FC<PaginationProps> = ({
   totalPages,
   currentPage,
   onPageChange,
 }) => {
+  // Using the custom pagination hook to generate the list of pages
   const pages = usePagination(totalPages, currentPage);
 
   return (
+    // Wrapper component for the entire pagination UI
     <Pagination>
       <PaginationContent>
         <PaginationPrevious

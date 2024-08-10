@@ -6,7 +6,7 @@ import Sidebar from "../components/SideBar/Sidebar";
 import UpcomingClasses from "../components/dashboard/UpcomingClasses";
 import PaginationUi from "../components/pagination/PaginationUi";
 import NavBar from "../components/NavBar/NavBar";
-import AssignmentCard from "../components/Assig/AssignmentCard";
+import AssignmentCard from "../components/Assignment/AssignmentCard";
 
 const Dashboard = () => {
   const dispatch = useDispatch();

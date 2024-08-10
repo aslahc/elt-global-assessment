@@ -1,17 +1,17 @@
 import React from "react";
 import useTheme from "../../hooks/useTheme";
 import ThemeSwitcher from "../Theme/ThemeSwitcher";
+// Importing navigation items from a utility file
+import { navItems } from "../../utils/navItems";
 
+//  This component renders the navigation bar for the application.
 function NavBar() {
+  // hook used to switch theme
   const { isDarkTheme, toggleTheme } = useTheme();
-  const navItems = [
-    { href: "#", text: "Blogs" },
-    { href: "#", text: "News" },
-    { href: "#", text: "Help center" },
-    { href: "#", text: "Customer care" },
-  ];
+  //
 
   return (
+    // The  div changes its class based on the current theme
     <div className={isDarkTheme ? "dark" : ""}>
       <nav
         className={`bg-white hidden lg:block border-gray-200 top-0 ${
@@ -36,6 +36,7 @@ function NavBar() {
               ))}
             </div>
           </div>
+          {/* ThemeSwitcher component to toggle between dark and light themes */}
           <ThemeSwitcher isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
         </div>
       </nav>

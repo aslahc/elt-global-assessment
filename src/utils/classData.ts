@@ -10,31 +10,44 @@ export const classData: ClassData[] = [
     staffDetails: "Additional details",
 
     imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
+      "https://img.freepik.com/free-photo/portrait-optimistic-businessman-formalwear_1262-3600.jpg",
     Booked: true,
     Live: true,
   },
   {
     id: uuidv4(),
-    name: "React Fundamentals",
+    name: "Graphic Designing",
     date: new Date("2024-08-10T12:00:00"),
-    staff: "Nandini S",
+    staff: "Leslie Alexander",
     staffDetails: "Additional details",
 
     imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
+      "https://t3.ftcdn.net/jpg/05/65/15/20/360_F_565152029_AtUNb3iu02IuazIm7HuAN4dcTVP3Zn0F.webp",
+    Booked: false,
+    Live: false,
+  },
+
+  {
+    id: uuidv4(),
+    name: "Design Hierarchy",
+    date: new Date("2024-08-11T14:00:00"),
+    staff: "Courtney Henry",
+    staffDetails: "Additional details",
+
+    imgSrc:
+      "https://www.shutterstock.com/image-photo/cheerful-arabian-indian-young-man-600nw-2183402233.jpg",
     Booked: false,
     Live: false,
   },
   {
     id: uuidv4(),
-    name: "Advanced JavaScript",
+    name: "Basics of Frontend",
     date: new Date("2024-08-13T14:00:00"),
-    staff: "Karthik M",
+    staff: "Arlene McCoy",
     staffDetails: "Additional details",
 
     imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
+      "https://media.licdn.com/dms/image/C4D12AQFBwRUfyBn5yQ/article-cover_image-shrink_600_2000/0/1520110535291?e=2147483647&v=beta&t=9zFPqxuqLOcN0xHA_v5jHZVEW5WNLMxhVCj4eOOwJFI",
     Booked: false,
     Live: false,
   },
@@ -46,7 +59,7 @@ export const classData: ClassData[] = [
     staffDetails: "Additional details",
 
     imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
+      "https://media.licdn.com/dms/image/C5612AQHOzhZg_MFiDQ/article-cover_image-shrink_600_2000/0/1622942317805?e=2147483647&v=beta&t=RNK2scPCa1QiuHm9ahLRGXWX8aLUUpH7JoEYtpfE35w",
     Booked: false,
     Live: false,
   },
@@ -58,34 +71,11 @@ export const classData: ClassData[] = [
     staffDetails: "Additional details",
 
     imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
+      "https://www.shutterstock.com/image-photo/cheerful-arabian-indian-young-man-600nw-2183402233.jpg",
     Booked: false,
     Live: false,
   },
-  {
-    id: uuidv4(),
-    name: "Version Control with Git",
-    date: new Date("2024-08-11T12:00:00"),
-    staff: "Priya N",
-    staffDetails: "Additional details",
 
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
-  {
-    id: uuidv4(),
-    name: "Design Patterns",
-    date: new Date("2024-08-11T14:00:00"),
-    staff: "Raghav K",
-    staffDetails: "Additional details",
-
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
   {
     id: uuidv4(),
     name: "TypeScript Essentials",
@@ -93,148 +83,6 @@ export const classData: ClassData[] = [
     staff: "Divya P",
     staffDetails: "Additional details",
 
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
-  {
-    id: uuidv4(),
-    name: "Cloud Computing Basics",
-    date: new Date("2024-08-16T10:00:00"),
-    staff: "Arjun B",
-    staffDetails: "Additional details",
-
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
-  {
-    id: uuidv4(),
-    name: "API Development",
-    date: new Date("2024-08-12T12:00:00"),
-    staff: "Shreya M",
-    staffDetails: "Additional details",
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
-  {
-    id: uuidv4(),
-    name: "UI/UX Designing",
-    date: new Date("2024-08-10T10:00:00"),
-    staff: "Suriya R",
-    staffDetails: "Additional details",
-
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: true,
-    Live: true,
-  },
-  {
-    id: uuidv4(),
-    name: "React Fundamentals",
-    date: new Date("2024-08-10T12:00:00"),
-    staff: "Nandini S",
-    staffDetails: "Additional details",
-
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
-  {
-    id: uuidv4(),
-    name: "Advanced JavaScript",
-    date: new Date("2024-08-13T14:00:00"),
-    staff: "Karthik M",
-    staffDetails: "Additional details",
-
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
-  {
-    id: uuidv4(),
-    name: "Node.js Basics",
-    date: new Date("2024-08-10T16:00:00"),
-    staff: "Ayesha A",
-    staffDetails: "Additional details",
-
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
-  {
-    id: uuidv4(),
-    name: "Database Management",
-    date: new Date("2024-08-14T10:00:00"),
-    staff: "Vikram S",
-    staffDetails: "Additional details",
-
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
-  {
-    id: uuidv4(),
-    name: "Version Control with Git",
-    date: new Date("2024-08-11T12:00:00"),
-    staff: "Priya N",
-    staffDetails: "Additional details",
-
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
-  {
-    id: uuidv4(),
-    name: "Design Patterns",
-    date: new Date("2024-08-11T14:00:00"),
-    staff: "Raghav K",
-    staffDetails: "Additional details",
-
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
-  {
-    id: uuidv4(),
-    name: "TypeScript Essentials",
-    date: new Date("2024-08-11T16:00:00"),
-    staff: "Divya P",
-    staffDetails: "Additional details",
-
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
-  {
-    id: uuidv4(),
-    name: "Cloud Computing Basics",
-    date: new Date("2024-08-16T10:00:00"),
-    staff: "Arjun B",
-    staffDetails: "Additional details",
-
-    imgSrc:
-      "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
-    Booked: false,
-    Live: false,
-  },
-  {
-    id: uuidv4(),
-    name: "API Development",
-    date: new Date("2024-08-12T12:00:00"),
-    staff: "Shreya M",
-    staffDetails: "Additional details",
     imgSrc:
       "https://i.pinimg.com/564x/98/51/1e/98511ee98a1930b8938e42caf0904d2d.jpg",
     Booked: false,

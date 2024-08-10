@@ -12,11 +12,13 @@ const PaginationUi: React.FC<PaginationUiProps> = ({
 }) => {
   return (
     <div className="flex items-center justify-between space-x-40">
+      {/* PaginationComponent: Renders pagination controls */}
       <PaginationComponent
         totalPages={totalPages}
         currentPage={currentPage}
         onPageChange={onPageChange}
       />
+      {/* ResultsPerPageSelector: Renders selector for results per page */}
       <ResultsPerPageSelector
         resultsPerPage={resultsPerPage}
         onResultsPerPageChange={onResultsPerPageChange}

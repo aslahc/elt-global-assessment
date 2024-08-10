@@ -1,8 +1,9 @@
 import React from "react";
 import useLiveTimer from "../../hooks/useLiveTImer";
 import { formatTime } from "../../utils/formatTime";
-
+// this commponet is for to start timer when class is live
 const LiveTimer: React.FC = () => {
+  // hooks to start timer
   const elapsedTime = useLiveTimer();
 
   return (

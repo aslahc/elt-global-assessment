@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Button } from "../../shadcncomponents/ui/button";
 import ConfirmationModal from "../popupModal/confirmBookNow";
 import { BookingClass } from "../../redux/classSlice";
-import { RootState } from "../../redux/store"; // Adjust the path according to your store setup
+import { RootState } from "../../redux/store";
 import { ClassData } from "../../types/classDataTypes";
 
 import { BookNowBtnProps } from "../../types/BookNowBtn";
@@ -19,9 +19,11 @@ const BookNowBtn: React.FC<BookNowBtnProps> = ({ classId }) => {
     )
   );
 
+  // function to manage the booking confirmation modal
   const handleOpenModal = () => setIsModalOpen(true);
   const handleCloseModal = () => setIsModalOpen(false);
 
+  // function to confirm the booking
   const handleConfirmBooking = () => {
     if (classData) {
       const updatedClassData = { ...classData, Booked: true };
@@ -31,6 +33,7 @@ const BookNowBtn: React.FC<BookNowBtnProps> = ({ classId }) => {
   };
 
   return (
+    // class book now button
     <div>
       <Button
         variant="ghost"

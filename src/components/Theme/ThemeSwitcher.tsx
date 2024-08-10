@@ -1,11 +1,12 @@
 import React from "react";
+// Importing the Switch component from Shadcn/UI
 import { Switch } from "../../shadcncomponents/ui/switch";
-
+// Defining the types for the props
 interface ThemeSwitcherProps {
   isDarkTheme: boolean;
   toggleTheme: () => void;
 }
-
+//  This component allows users to switch between dark and light themes
 const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({
   isDarkTheme,
   toggleTheme,

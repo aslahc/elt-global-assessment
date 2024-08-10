@@ -1,4 +1,5 @@
 import React from "react";
+// Importing  components from the Shadcn/U
 import {
   AlertDialog,
   AlertDialogAction,
@@ -10,6 +11,7 @@ import {
   AlertDialogTitle,
 } from "../../shadcncomponents/ui/alert-dialog";
 
+// Importing the types for the props
 import { ConfirmationModalProps } from "../../types/modal";
 
 const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
@@ -26,6 +28,7 @@ const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
           <AlertDialogTitle>{title}</AlertDialogTitle>
           <AlertDialogDescription>{description}</AlertDialogDescription>
         </AlertDialogHeader>
+        {/* Horizontal line separating the header from the footer */}
         <hr></hr>
         <AlertDialogFooter>
           <AlertDialogCancel onClick={onClose}>close</AlertDialogCancel>

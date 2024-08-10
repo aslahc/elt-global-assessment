@@ -4,10 +4,7 @@ import { ClassData } from "../../types/classDataTypes";
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store"; // Adjust the path according to your store setup
 
-interface CountdownTimeProps {
-  targetDate: Date;
-  classId: string;
-}
+import { CountdownTimeProps } from "../../types/CountdownTime";
 
 const CountdownTime: React.FC<CountdownTimeProps> = ({
   targetDate,

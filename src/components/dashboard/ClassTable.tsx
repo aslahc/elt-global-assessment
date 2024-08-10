@@ -10,21 +10,37 @@ import {
 } from "../../shadcncomponents/ui/table";
 import ClassRow from "./ClassRow";
 
-const ClassTable: React.FC = () => {
+import { ClassTableProps } from "../../types/ClassTable";
+
+const ClassTable: React.FC<ClassTableProps> = ({
+  showBookedOnly,
+  currentPage,
+  resultsPerPage,
+}) => {
   const classes = useSelector((state: RootState) => state.classes.classes);
+
+  const filteredClasses = showBookedOnly
+    ? classes.filter((classItem) => classItem.Booked)
+    : classes;
+
+  const paginatedClasses = filteredClasses.slice(
+    (currentPage - 1) * resultsPerPage,
+    currentPage * resultsPerPage
+  );
 
   return (
     <Table>
-      <TableHeader className="bg-gray-100 dark:bg-gray-700">
+      <TableHeader className="bg-gray-100 dark:bg-gray-700 md:table-header-group hidden">
         <TableRow className="bg-gray-100 dark:bg-gray-700">
           <TableHead>Class name</TableHead>
           <TableHead>Staff name</TableHead>
           <TableHead>Actions</TableHead>
         </TableRow>
       </TableHeader>
+
       <TableBody>
-        {classes.map((classItem) => (
-          <ClassRow key={classItem.id} classItem={classItem} />
+        {paginatedClasses.map((classItem, index) => (
+          <ClassRow key={classItem.id} classItem={classItem} index={index} />
         ))}
       </TableBody>
     </Table>

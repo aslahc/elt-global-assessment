@@ -9,17 +9,24 @@ import { ClassData } from "../../types/classDataTypes";
 
 interface ClassRowProps {
   classItem: ClassData;
+  index: number; // Add this line
 }
 
-const ClassRow: React.FC<ClassRowProps> = ({ classItem }) => (
+const ClassRow: React.FC<ClassRowProps> = ({ classItem, index }) => (
   <TableRow className="bg-gray-100 dark:bg-gray-700">
     <TableCell>
-      <div className="grid grid-cols-[auto_1fr] gap-2">
-        <span className="self-center text-muted-foreground text-gray-400 dark:text-gray-500 font-medium pr-2">
-          1
+      <div className="grid grid-cols-[auto_1fr] gap-3">
+        <span
+          className="self-center  text--100 dark:text-gray-500 font-medium pr-2"
+          style={{ color: "#A1A0A3" }}
+        >
+          {index + 1}
         </span>
         <div className="flex flex-col justify-between">
-          <span className="font-semibold text-[14px] leading-[18px] tracking-[-0.05px] font-inter whitespace-nowrap dark:text-white">
+          <span
+            className=" text-[14px] leading-[18px] tracking-[-0.05px] font-inter whitespace-nowrap dark:text-white"
+            style={{ fontWeight: 645 }}
+          >
             {classItem.name}
           </span>
           <div className="flex items-center space-x-1 text-sm">
@@ -35,7 +42,7 @@ const ClassRow: React.FC<ClassRowProps> = ({ classItem }) => (
       </div>
     </TableCell>
     <TableCell>
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2 pr-14">
         <img
           src={classItem.imgSrc}
           alt={classItem.staff}

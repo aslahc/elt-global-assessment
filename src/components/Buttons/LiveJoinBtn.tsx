@@ -6,7 +6,7 @@ const LiveJoinBtn = () => {
       <Button
         variant="custom"
         size="custom"
-        className="bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 rounded-[0.345rem] text-white font-semibold py-2 px-4 flex items-center space-x-2"
+        className="bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 rounded-[0.345rem] text-white font-semibold py-2 px-3 flex items-center space-x-1"
       >
         <span>Join now</span>
         <svg

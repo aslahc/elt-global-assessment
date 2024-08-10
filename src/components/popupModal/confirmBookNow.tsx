@@ -10,13 +10,7 @@ import {
   AlertDialogTitle,
 } from "../../shadcncomponents/ui/alert-dialog";
 
-interface ConfirmationModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  onConfirm: () => void;
-  title: string;
-  description: string;
-}
+import { ConfirmationModalProps } from "../../types/modal";
 
 const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
   isOpen,

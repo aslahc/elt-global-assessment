@@ -5,11 +5,7 @@ import "./index.css"; // Or './global.css'
 import Dashboard from "./pages/Dashboard";
 
 const App = () => {
-  return (
-    <div>
-      <Dashboard />
-    </div>
-  );
+  return <Dashboard />;
 };
 
 export default App;

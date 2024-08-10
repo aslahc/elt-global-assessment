@@ -6,9 +6,7 @@ import { BookingClass } from "../../redux/classSlice";
 import { RootState } from "../../redux/store"; // Adjust the path according to your store setup
 import { ClassData } from "../../types/classDataTypes";
 
-interface BookNowBtnProps {
-  classId: string; // Pass the class ID as a prop
-}
+import { BookNowBtnProps } from "../../types/BookNowBtn";
 
 const BookNowBtn: React.FC<BookNowBtnProps> = ({ classId }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -47,7 +45,7 @@ const BookNowBtn: React.FC<BookNowBtnProps> = ({ classId }) => {
         onClose={handleCloseModal}
         onConfirm={handleConfirmBooking}
         title="Are you sure?"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        description="Are you sure you want to book this class? Once booked, you will receive a confirmation and a reminder closer to the class date."
       />
     </div>
   );

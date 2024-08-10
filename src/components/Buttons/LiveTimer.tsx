@@ -1,22 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useLiveTimer from "../../hooks/useLiveTImer";
+import { formatTime } from "../../utils/formatTime";
 
 const LiveTimer: React.FC = () => {
-  const [elapsedTime, setElapsedTime] = useState<number>(0); // Start from 0
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setElapsedTime((prevElapsedTime) => prevElapsedTime + 1);
-    }, 1000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
-  const formatTime = (seconds: number) => {
-    const mins = Math.floor(seconds / 60);
-    const secs = seconds % 60;
-    return `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
-  };
-  console.log(elapsedTime);
+  const elapsedTime = useLiveTimer();
 
   return (
     <div className="flex items-center space-x-1">

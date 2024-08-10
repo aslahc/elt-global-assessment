@@ -1,5 +1,6 @@
 # Vite + React + TypeScript Project
 <img src="https://github.com/aslahc/elt-global-assessment/blob/main/public/Screenshot%202024-08-10%20130456.png?raw=true">
+<!-- <img src="https://github.com/aslahc/elt-global-assessment/blob/main/public/Screenshot%202024-08-10%20131512.png?raw=true"> -->
 This template provides a minimal setup for working with React, TypeScript, and Vite. It includes hot module replacement (HMR) and ESLint configuration.
 
 ## **Features**

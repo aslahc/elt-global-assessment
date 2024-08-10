@@ -1,10 +1,4 @@
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-} from "../../shadcncomponents/ui/card";
 
 // Define a type for the assignment object
 interface Assignment {

@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setClasses } from "../redux/classSlice";
 import { classData } from "../utils/classData";
 import Sidebar from "../components/SideBar/Sidebar";
 import UpcomingClasses from "../components/dashboard/UpcomingClasses";
-import PaginationUi from "../components/pagination/PaginationUi";
 import NavBar from "../components/NavBar/NavBar";
 import AssignmentCard from "../components/Assignment/AssignmentCard";
 

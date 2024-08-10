@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../../shadcncomponents/ui/button";
 const LiveJoinBtn = () => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import PaginationComponent from "./PaginationComponent";
 import ResultsPerPageSelector from "./ResultsPerPageSelector";
 import { PaginationUiProps } from "../../types/pagination-ui";

@@ -1,6 +1,5 @@
 import React from "react";
 import useCountdown from "../../hooks/useCountdown";
-import { ClassData } from "../../types/classDataTypes";
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
 

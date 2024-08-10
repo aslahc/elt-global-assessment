@@ -1,4 +1,3 @@
-import React from "react";
 import useTheme from "../../hooks/useTheme";
 import ThemeSwitcher from "../Theme/ThemeSwitcher";
 // Importing navigation items from a utility file
